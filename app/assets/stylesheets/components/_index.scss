@@ -2,3 +2,84 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+body {
+  background-color: rgb(50,50,50);
+  color: rgb(200,200,200);
+}
+
+h1 {
+  font-size: 60px;
+  padding-bottom: 40px;
+  text-shadow: 10px,10px, black
+}
+
+a {
+  color: rgb(200,200,200);
+  text-decoration: none;
+}
+
+.main-container {
+  width: 75vw;
+  margin: 50px auto;
+}
+
+.list-item {
+  border-bottom: solid thin rgb(200,200,200);
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+
+  &:hover a {
+    color: rgb(140,140,140);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}
+
+.list-item a {
+  font-size: 25px;
+}
+
+.add-cocktail {
+  padding: 10px;
+  text-align: right;
+
+  &:hover a {
+    color: rgb(140,140,140);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}
+
+
+
+.links {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-list-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid thin rgb(200,200,200);
+  padding: 20px;
+  text-align: left;
+  font-size: 25px;
+
+  &:hover a {
+    color: rgb(140,140,140);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}
+
+.btn-delete a {
+  opacity: 5;
+  color: rgb(50,50,50);
+
+  &:hover a {
+    opacity: 100;
+  }
+}
