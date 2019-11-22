@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm sticky-top">
-  <div class="top-main-container">
+  <div class="show-top-main-container" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo, height: 300, width: 400, crop: :fill%>')">
     <h1><%= @cocktail.name %></h1>
   </div>
 </div>
@@ -18,5 +18,3 @@
     <p><%= link_to "add a dose", new_cocktail_dose_path(@cocktail) %></p>
   </div>
 </div>
-
-<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
