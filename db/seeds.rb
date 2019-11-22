@@ -21,3 +21,14 @@ data = JSON.parse(text)
 data['drinks'].each do |hash|
   Ingredient.create(name: hash['strIngredient1'])
 end
+
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "White Russian")
+Cocktail.create(name: "Mai Tai")
+Cocktail.create(name: "Irish Coffee")
+Cocktail.create(name: "Long Island Iced Tea")
+Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Moscow Mule")
+Cocktail.create(name: "Espresso Martini")
+Cocktail.create(name: "Manhattan")
+Cocktail.create(name: "Whiskey Sour")
