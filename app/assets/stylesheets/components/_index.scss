@@ -4,14 +4,15 @@
 @import "navbar";
 
 body {
-  background-color: rgb(50,50,50);
+  background-color: rgb(100,100,100);
   color: rgb(200,200,200);
 }
 
 h1 {
+  color: rgb(210,210,210);
   font-size: 60px;
   padding-bottom: 40px;
-  text-shadow: 10px,10px, black
+  text-shadow: rgb(50,50,50) 0 0 5px;
 }
 
 a {
@@ -19,9 +20,23 @@ a {
   text-decoration: none;
 }
 
+.top-main-container {
+  display: flex;
+  align-items: flex-end;
+  width: 75vw;
+  height: 150px;
+  margin: 0 auto;
+  background-color: rgb(100,100,100);
+}
+
+.top-main-container h1 {
+  padding: 0
+}
+
 .main-container {
   width: 75vw;
   margin: 50px auto;
+  background-color: rgb(100,100,100);
 }
 
 .list-item {
@@ -29,10 +44,38 @@ a {
   padding: 20px;
   text-align: center;
   font-size: 25px;
+}
 
-  &:hover a {
-    color: rgb(140,140,140);
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+
+  &:hover {
+    color: rgb(210,210,210);
     text-decoration: none;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg);
     transition: 0.3s;
   }
 }
@@ -51,8 +94,6 @@ a {
     transition: 0.3s;
   }
 }
-
-
 
 .links {
   padding: 10px;
@@ -77,7 +118,7 @@ a {
 
 .btn-delete a {
   opacity: 5;
-  color: rgb(50,50,50);
+  color: rgb(100,100,100);
 
   &:hover a {
     opacity: 100;

@@ -1,13 +1,19 @@
+<div class="navbar navbar-expand-sm sticky-top">
+  <div class="top-main-container">
+    <h1>Cocktails</h1>
+  </div>
+</div>
 
 <div class="main-container">
-  <h1>Cocktails</h1>
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail do %>
+        <div class="card-category"><%=cocktail.name%></div>
+      <% end %>
+    <% end %>
+  </div>
 
-  <% num = 1 %>
-
-  <% @cocktails.each do |cocktail| %>
-     <div class="list-item"> <%= link_to cocktail.name, cocktail %></div>
-    <% num += 1 %>
-  <% end %>
-
-  <p class="add-cocktail"><%= link_to "add a cocktail", new_cocktail_path %></p>
+<p class="add-cocktail"><%= link_to "add a cocktail", new_cocktail_path %></p>
 </div>
+
+<div class="list-item"> </div>
